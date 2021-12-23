@@ -20,7 +20,7 @@ const Nav = () => {
     return(
         <div>
             <button onClick={toggleMobileMenu} className="toggle-mobile-nav"> Toggle Nav</button>
-            <nav data-visible={mobileTabOpen}>
+            <nav hidden={!mobileTabOpen} data-visible={mobileTabOpen}>
                 <Link onClick={() => {tabSelected(0)}} className={selectedTab === 0 ? 'nav-item-selected' : 'nav-item'} to={'/'}>Home</Link>
                 <Link onClick={() => {tabSelected(1)}} className={selectedTab === 1 ? 'nav-item-selected' : 'nav-item'} to={'/services'}>Services</Link>
                 <Link onClick={() => {tabSelected(2)}} className={selectedTab === 2 ? 'nav-item-selected' : 'nav-item'} to={'/about'}>About</Link>
