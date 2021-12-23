@@ -22,6 +22,10 @@ const LandingPage = () => {
                 <div className='header'>
                     <h1 className='title'>Hedley</h1>
                     <h2 className='sub-title'>Electrical</h2>
+
+                </div>
+                <div>
+                <h3>Providing electrical services to the Manawatu for over 50 years</h3>
                 </div>
             </section>
             <br className='spacer'></br>
