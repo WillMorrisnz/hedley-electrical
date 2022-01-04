@@ -23,6 +23,9 @@
   --clr-light: #7AC7E1;
   --clr-accent: #33b4db;
   --clr-charcoal: #242424;
+
+  --padding: 1em;
+  --max-width: 80%;
 }
 
 /* Nav Content */
@@ -48,6 +51,11 @@ nav {
 
 
 @media (max-width: 35em) {
+  :root{
+    --padding: 0.25em;
+    --max-width: 95%
+  }
+
   nav {
     z-index: 9000;
     position: fixed;
@@ -107,7 +115,7 @@ nav[data-visible="true"] {
   font-weight: 900;
   font-size: medium;
   color: rgb(0, 153, 255);
-  text-shadow: 0 0 8px rgba(6, 255, 243, 0.5);
+  text-shadow: 0 0 8px rgba(16, 112, 175, 0.5);
 }
 
 /* Landing Page */
@@ -121,8 +129,8 @@ nav[data-visible="true"] {
 .title {
   margin-top: 0;
   color: var(--clr-charcoal);
-  font-size: 5rem;
-  font-family: lemonmilk;
+  font-size: 4rem;
+  font-family: 'lemonmilk';
   margin: 0;
 }
 
@@ -130,6 +138,7 @@ nav[data-visible="true"] {
   color: var(--clr-primary);
   font-size: 3rem;
   margin-top: -1rem;
+  margin-bottom: 0em;
   /* text-shadow: 0 0 5px var(--clr-light); */
 }
 
@@ -148,10 +157,10 @@ nav[data-visible="true"] {
 
 .header {
   align-items: center;
-  padding: 2em;
+  padding: 3em 0 0 3em;
   width: 60%;
-  height: 25vh;
-  margin-bottom: 2em;
+  height: 20vh;
+  margin-bottom: 1em;
 }
 
 h3 {
@@ -192,7 +201,7 @@ section{
 }
 
 .container {
-  max-width: 80%;
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
@@ -208,12 +217,12 @@ margin: 0.5em;
 .card-p {
   font-family: 'Roboto', sans-serif;
   text-align: justify;
-  padding: 0 1.5em;
+  padding: 0 var(--padding);
   color: black;
 }
 
 .card {
-  max-width: 20em;
+  max-width: min(max(var(--max-width), 20em), 30em);
   background-color: var(--clr-dark);
   border-radius: 1em;
   padding: 0.75em;
@@ -221,6 +230,7 @@ margin: 0.5em;
 }
 
 .lemon {
-  font-family: 'lemonmilk';
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: var(--padding);
   font-size: large;
 }
