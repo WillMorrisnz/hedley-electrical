@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import hamburger from '../assets/images/hamburger.svg'
+
+
 
 const Nav = () => {
     const [mobileTabOpen, setMobileTabOpen] = useState(false);
@@ -18,8 +21,8 @@ const Nav = () => {
     }
 
     return(
-        <div>
-            <button onClick={toggleMobileMenu} className="toggle-mobile-nav"> Toggle Nav</button>
+        <div className='nav-container'>
+            <img src={hamburger} onClick={toggleMobileMenu} className="mobile-nav-button"></img>
             <nav hidden={!mobileTabOpen} data-visible={mobileTabOpen}>
                 <Link onClick={() => {tabSelected(0)}} className={selectedTab === 0 ? 'nav-item-selected' : 'nav-item'} to={'/'}>Home</Link>
                 <Link onClick={() => {tabSelected(1)}} className={selectedTab === 1 ? 'nav-item-selected' : 'nav-item'} to={'/services'}>Services</Link>

@@ -11,11 +11,8 @@ import React from 'react';
 
 const ServicesPage = () => {
     return (
-        <div className='flex'>
-            <div className='background-dark flex-item'>
-            </div>
-            <div className='background-primary flex-item'>
-            </div>
+        <div className='container'>
+            Services
         </div>
     )
 }

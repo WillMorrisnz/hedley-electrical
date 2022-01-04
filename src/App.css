@@ -30,6 +30,7 @@
 nav {
   display: flex;
   justify-content: center;
+  width: 100%;
   gap: 3em;
 
   margin: 0;
@@ -40,13 +41,9 @@ nav {
   background-color: var(--clr-charcoal);
 }
 
-.toggle-mobile-nav {
+.mobile-nav-button {
   display: none;
   z-index: 9999;
-  position: fixed;
-  top: 1em;
-  right: 1em;
-  background-color: red;
 }
 
 
@@ -54,29 +51,37 @@ nav {
   nav {
     z-index: 9000;
     position: fixed;
-    inset: 0 0 0 40vw;
-    gap: 1em;
-    height: 100vh;
-    width: 60vw;
 
-    display: flex;
+    gap: 1em;
+    height: 100%;
+    width: 66%;
+
+    display: none;
     flex-direction: column;
     align-items: center;
     
     background: rgba(65, 65, 65, 0.8);
     backdrop-filter: blur(1em);
-    transform: translateX(100%);
   }
-  .toggle-mobile-nav {
-    display: block;
+  .mobile-nav-button {
+    display: inline-block;
     position: fixed;
+    padding: .5em;
+    top: .5em;
+    left: .5em;
   }
 }
 
 nav[data-visible="true"] {
-  transform: translateX(0%);
-  transition: 0.1s;
+  display: flex;
+  position: fixed;
 }
+
+.nav-container {
+  width: auto;
+  height: 100%;
+}
+
 
 
 .nav-item {
