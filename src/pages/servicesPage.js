@@ -1,19 +1,18 @@
 import React from 'react';
-// import image1 from '../assets/images/image1.png'
-
-// const services = [
-//     {
-//         title: 'Gate Automation',
-//         description: 'We automate gates',
-//         image: image1
-//     }
-// ]
 
 const ServicesPage = () => {
     return (
-        <div className='container'>
-            Services
-        </div>
+        <section className='template-grid'>
+            <div className='card-outline '>
+                <h4>Residential</h4>
+            </div>
+            <div className='card-outline '>
+                <h4>Commercial</h4>
+            </div>
+            <div className='card-outline '>
+                <h4>Gate Automation</h4>
+            </div>
+        </section>
     )
 }
 

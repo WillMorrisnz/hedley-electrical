@@ -13,7 +13,9 @@ import ContactPage from './pages/contactPage';
 function App() {
   return (
     <div className="App">
-      <Nav></Nav>
+      <header>
+      < Nav></Nav>
+      </header>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/services" element={<ServicesPage />} />

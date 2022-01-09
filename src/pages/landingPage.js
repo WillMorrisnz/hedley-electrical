@@ -34,7 +34,7 @@ const LandingPage = () => {
                 <div className='container row'>
                     {projects.map((project) => {
                         return(
-                            <div className='card col'>
+                            <div key={project.title} className='card col'>
                                 <h4 className='lemon'>{project.title}</h4>
                                 <p className='card-p'>{project.description}</p>
                             </div>

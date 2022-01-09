@@ -19,7 +19,7 @@
 :root{
   --clr-primary: #2abdee;
   --clr-contrast: #7e7e7e;
-  --clr-dark: #8fd9f1;
+  --clr-dark: #fafafa;
   --clr-light: #7AC7E1;
   --clr-accent: #33b4db;
   --clr-charcoal: #242424;
@@ -59,6 +59,8 @@ nav {
   nav {
     z-index: 9000;
     position: fixed;
+    left: 0;
+    top: 0;
 
     gap: 1em;
     height: 100%;
@@ -152,7 +154,7 @@ nav[data-visible="true"] {
 
 .backdrop {
   padding: 2em 0;
-  background-color: var(--clr-accent);
+  background-color: rgb(46, 89, 139);
 }
 
 .header {
@@ -182,11 +184,28 @@ img{
 }
 
 section{
-  min-height: 40vh;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .flex {
   display: flex;
+}
+
+.template-grid {
+  gap: .5em;
+  margin-inline: auto;
+  margin-top: 2em;
+  display: grid;
+  max-width: 80%;
+  grid-template-columns: 
+    repeat(auto-fit, minmax(15em, 1fr));
+}
+
+.card__content {
+  align-self: end;
+  margin: 0.5rem 0.5rem 2rem;
+  padding: 0.5rem;
 }
 
 .flex-item {
@@ -221,16 +240,27 @@ margin: 0.5em;
   color: black;
 }
 
+.card-outline {
+  aspect-ratio: 1/1;
+
+  background-color: white;
+  color: rgb(0, 136, 221);
+
+  border:  rgb(0, 136, 221);
+  border-width: unset;
+  border-style: solid;
+}
+
 .card {
   max-width: min(max(var(--max-width), 20em), 30em);
-  background-color: var(--clr-dark);
-  border-radius: 1em;
+  background-color: rgb(87, 207, 255);
+  border-radius: .5em;
   padding: 0.75em;
-  color: black;
+  color: rgb(27, 47, 161);
 }
 
 .lemon {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   padding-bottom: var(--padding);
-  font-size: large;
+  font-weight: bold;
 }
