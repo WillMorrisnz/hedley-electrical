@@ -1,4 +1,5 @@
 import React from 'react';
+import Services from '../components/services';
 
 const LandingPage = () => {
     const projects = [
@@ -22,15 +23,20 @@ const LandingPage = () => {
                 <div className='header'>
                     <h1 className='title'>Hedley</h1>
                     <h2 className='sub-title'>Electrical</h2>
-
                 </div>
                 <div>
                 <h3>Providing electrical services to the Manawatu for over 50 years</h3>
                 </div>
             </section>
             <br className='spacer'></br>
+
+            <div className='background-dark'>
+                <h3 className='lemon text-white'>Our Services</h3>
+                <Services></Services>
+            </div>
             
-            <section className='backdrop' >
+            
+            <section className='background-medium-blue' >
                 <div className='container row'>
                     {projects.map((project) => {
                         return(
@@ -42,6 +48,8 @@ const LandingPage = () => {
                     })}
                 </div>
             </section>
+
+
 
         </div>
     )

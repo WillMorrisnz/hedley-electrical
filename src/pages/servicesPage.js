@@ -5,7 +5,7 @@ import image2 from '../assets/images/image2.jpeg'
 
 const ServicesPage = () => {
     return (
-        <section className='template-grid'>
+        <div className='template-grid'>
             <div className='card-outline stacked'>
                 <img className='card__img' src={image}></img>
                 <div className='blue_gradient'></div>
@@ -27,7 +27,7 @@ const ServicesPage = () => {
                     <h4 className='lemon'>Gate Automation</h4>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 
