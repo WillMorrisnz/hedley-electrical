@@ -241,7 +241,7 @@ margin: 0.5em;
 }
 
 .card-outline {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1 !important;
 
   background-color: white;
   color: rgb(0, 136, 221);
