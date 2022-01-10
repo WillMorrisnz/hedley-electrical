@@ -199,13 +199,32 @@ section{
   display: grid;
   max-width: 80%;
   grid-template-columns: 
-    repeat(auto-fit, minmax(15em, 1fr));
+    repeat(auto-fit, minmax(10rem, 1fr));
 }
 
 .card__content {
   align-self: end;
-  margin: 0.5rem 0.5rem 2rem;
-  padding: 0.5rem;
+  margin: 0.5rem 0.5rem 0;
+  padding: 0;
+  z-index: 1000;
+  color: white;
+}
+
+.blue_gradient {
+  width: 100%;
+  height: 100%;
+  align-self: end;
+  max-height: 5rem;
+  z-index: 1000;
+  min-height: 2em;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(50,97,177,0.6) 30%, rgba(50,97,177,1) 70%);
+}
+
+.card__img {
+  width: 100%;
+  aspect-ratio: 1 / 1.25;
+  object-fit: cover;
+  z-index: 1000;
 }
 
 .flex-item {
@@ -222,6 +241,15 @@ section{
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
+}
+
+.stacked {
+  display: grid;
+}
+
+.stacked > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
 
@@ -246,6 +274,8 @@ margin: 0.5em;
   background-color: white;
   color: rgb(0, 136, 221);
 
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.452);
+
   border:  rgb(0, 136, 221);
   border-width: unset;
   border-style: solid;
@@ -260,7 +290,7 @@ margin: 0.5em;
 }
 
 .lemon {
-  font-family: 'Roboto';
+  font-family: 'lemonmilk';
   padding-bottom: var(--padding);
-  font-weight: bold;
+  font-size: .75rem;
 }
