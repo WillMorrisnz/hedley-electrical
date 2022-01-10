@@ -194,7 +194,7 @@ section{
 
 .template-grid {
   gap: .5em;
-  margin-inline: auto;
+  margin: 0 auto;
   margin-top: 2em;
   display: grid;
   max-width: 80%;
@@ -241,7 +241,7 @@ margin: 0.5em;
 }
 
 .card-outline {
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
 
   background-color: white;
   color: rgb(0, 136, 221);
