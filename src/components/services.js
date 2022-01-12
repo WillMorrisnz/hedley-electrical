@@ -5,7 +5,7 @@ import image2 from '../assets/images/image2.jpeg'
 
 const Services = () => {
     return(
-    <section className='template-grid'>
+    <section className='template-grid grid-2-col'>
         <div className='card-outline stacked'>
             <img className='card__img' src={image}></img>
             <div className='blue_gradient'></div>

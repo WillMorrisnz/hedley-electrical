@@ -18,7 +18,7 @@ const LandingPage = () => {
     ]
 
     return (
-        <div>
+        <main>
             <section>
                 <div className='header'>
                     <h1 className='title'>Hedley</h1>
@@ -51,7 +51,7 @@ const LandingPage = () => {
 
 
 
-        </div>
+        </main>
     )
 }
 
