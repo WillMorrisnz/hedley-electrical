@@ -44,7 +44,7 @@ const Nav = () => {
     return(
         <div>
             <div className='nav-container'>
-                <img src={mobileTabOpen ? exitIcon : hamburgerIcon} onClick={toggleMobileMenu} className="mobile-nav-button"></img>
+                <img src={mobileTabOpen ? exitIcon : hamburgerIcon} alt={mobileTabOpen ? 'close menu' : 'open menu'} onClick={toggleMobileMenu} className="mobile-nav-button"></img>
                 <nav hidden={!mobileTabOpen} data-visible={mobileTabOpen}>
                     {routes.map((route) => {
                         return (

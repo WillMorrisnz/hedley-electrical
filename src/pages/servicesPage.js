@@ -5,29 +5,70 @@ import image2 from '../assets/images/image2.jpeg'
 
 const ServicesPage = () => {
     return (
-        <div className='template-grid'>
-            <div className='card-outline stacked'>
-                <img className='card__img' src={image}></img>
-                <div className='blue_gradient'></div>
-                <div className='card__content'>
-                    <h4 className='lemon'>Residential</h4>
+        <main>
+            <section className='background-dark'>
+                <div className='container'>
+                    <h3 className='text-bright-blue'>
+                        Residential
+                    </h3>
+                    <div className='stacked grid'>
+                        <img src={image} className='card__img'></img>
+                        <div className='blue_gradient'></div>
+                    </div>
+                    
+                    <div className='grid background-700-blue p-1'>
+                        <ul className='list-items col'>
+                            <li>
+                                House re-wiring
+                            </li>
+                            <li>
+                                Lighting design
+                            </li>
+                            <li>
+                                Lighting installation
+                            </li>
+                            <li>
+                                Switchboard replacements
+                            </li>
+                        </ul>
+                        <p className='col text-white'>
+                        Our expertise in providing electrical solutions for renovations and new home builds means that we can guide you through the process so that the end result meets your expectations. We provide project management support from concept to completion of our projects – Residential Electricians Auckland.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div className='card-outline stacked'>
-                <img className='card__img' src={image1}></img>
-                <div className='blue_gradient'></div>
-                <div className='card__content'>
-                    <h4 className='lemon'>Commercial</h4>
+            </section>
+            <section className='background-dark'>
+                <div className='container'>
+                    <h3 className='text-bright-blue'>
+                        Commercial
+                    </h3>
+                    <div className='stacked grid'>
+                        <img src={image1} className='card__img'></img>
+                        <div className='blue_gradient'></div>
+                    </div>
+                    
+                    <div className='grid background-700-blue p-1'>
+                        <ul className='list-items col'>
+                            <li>
+                                House re-wiring
+                            </li>
+                            <li>
+                                Lighting design
+                            </li>
+                            <li>
+                                Lighting installation
+                            </li>
+                            <li>
+                                Switchboard replacements
+                            </li>
+                        </ul>
+                        <p className='col text-white'>
+                        Our expertise in providing electrical solutions for renovations and new home builds means that we can guide you through the process so that the end result meets your expectations. We provide project management support from concept to completion of our projects – Residential Electricians Auckland.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div className='card-outline stacked'>
-                <img className='card__img' src={image2}></img>
-                <div className='blue_gradient'></div>
-                <div className='card__content'>
-                    <h4 className='lemon'>Gate Automation</h4>
-                </div>
-            </div>
-        </div>
+            </section>
+        </main>
     )
 }
 
