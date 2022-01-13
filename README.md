@@ -1,7 +1,8 @@
 <h2>Hedley Electrical Website</h2>
 
 <h3>--- Under development ---</h3>
-<p>Up to date version can be viewed on: https://test-hedley-electrical.netlify.app/</p>
+<p>Up to date version can be viewed on: https://test-hedley-electrical.netlify.app/
+All information displayed such as text, images and colors is for templating the layout and will probably not be used in the final design</p>
 
 
 <h3>Running the application:</h3>
